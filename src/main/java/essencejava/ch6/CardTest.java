@@ -24,7 +24,7 @@ public class CardTest {
         System.out.println("c2은 " + c2.kind + ", " + c2.number + "이며, 크기는 (" + c2.width + ", " + c2.height + ") 입니다.");
 
         System.out.println("c1의 width와 height를 각각 50, 80으로 변경합니다.");
-        c1.width = 50;      // c1의 클래스 변수를 변경하면 c2의 클래스 변수도 변경된다.
+        c1.width = 50;      // 클래스 변수는 모두 하나의 저장공간을 공유하므로 c1의 클래스 변수를 변경하면 c2의 클래스 변수도 변경된다.
         c1.height = 80;
 
         c1.kind = "Clover"; // c1의 인스턴스 변수를 변경하면 c1의 인스턴스 변수만 변경된다.
